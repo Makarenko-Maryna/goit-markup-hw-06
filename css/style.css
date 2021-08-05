@@ -790,13 +790,13 @@ ul {
 .icon-check {
   position: absolute;
   left: 0;
-  top: ;
+  top: 0;
   /* content: ""; */
   display: inline-block;
   width: 16px;
   height: 15px;
   cursor: pointer;
-  border: 2px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid rgba(33, 33, 33, 1);
   margin-right: 8.38px;
   border-radius: 2px;
   fill: var(--white--);
