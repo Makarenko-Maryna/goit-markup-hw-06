@@ -353,10 +353,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -30px;
 }
 .client__item {
-  flex-basis: calc((100%-2 * 30) / 2);
-  margin-right: 30px;
+  flex-basis: calc((100%-6 * 30px) / 2);
+  margin-left: 30px;
 }
 
 .client__link {
@@ -599,12 +600,13 @@ ul {
 .footer-form {
   margin-left: 93px;
 }
-.join {
-  text-transform: uppercase;
+.join-title {
   margin-top: 10px;
-  font-style: normal;
   font-weight: bold;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--white--);
 }
 .join-input {
@@ -686,7 +688,6 @@ ul {
   right: 18px;
   width: 30px;
   height: 30px;
-  /* background-image: url(./image/icons/close.svg); */
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -722,6 +723,7 @@ ul {
   margin-bottom: 10px;
 }
 .order-input {
+  height: 40px;
   width: 100%;
   padding: 12px 0 12px 42px;
   margin-top: 4px;
@@ -768,43 +770,47 @@ ul {
 }
 
 .order-note {
+  height: 120px;
   padding: 12px 14px;
   resize: none;
 }
 
 .label-chek {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   font-size: 14px;
-  /* line-height: 1.714; */
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
   position: relative;
 }
 .order-chek {
+  margin-right: 9px;
+  justify-content: start;
 }
 .icon-check {
   position: absolute;
-  left: 6%;
-  top: 0;
+  left: 0;
+  top: ;
   /* content: ""; */
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
-  border-radius: 4px;
   cursor: pointer;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid rgba(33, 33, 33, 0.2);
   margin-right: 8.38px;
   border-radius: 2px;
   fill: var(--white--);
-  background-origin: border-box;
+  background: var(--white--);
   /* background-image: url(./image/icons/sprite.svg#icon-agree); */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-chek:checked + .icon-check {
   background-color: var(--brendColor--);
+}
+.link-contract {
+  text-decoration: underline;
+  color: var(--brendColor--);
 }
 /* .agree {
   content: "";
