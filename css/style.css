@@ -772,6 +772,7 @@ ul {
 .order-note {
   height: 120px;
   padding: 12px 14px;
+  margin-bottom: 20px;
   resize: none;
 }
 
